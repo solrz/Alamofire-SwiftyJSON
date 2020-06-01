@@ -25,16 +25,16 @@
 
 import PackageDescription
 
-let package = Package(name: "Alamofire-SwiftyJSON",
+let package = Package(name: "Alamofire_SwiftyJSON",
                       platforms: [.macOS(.v10_12),
                                   .iOS(.v10),
                                   .tvOS(.v10),
                                   .watchOS(.v3)],
-                      products: [.library(name: "Alamofire-SwiftyJSON",
-                                          targets: ["Alamofire-SwiftyJSON"])],
-                      targets: [.target(name: "Alamofire-SwiftyJSON",
+                      products: [.library(name: "Alamofire_SwiftyJSON",
+                                          targets: ["Alamofire_SwiftyJSON"])],
+                      targets: [.target(name: "Alamofire_SwiftyJSON",
                                         path: "Source"),
-                                .testTarget(name: "Alamofire-SwiftyJSONTests",
+                                .testTarget(name: "Alamofire_SwiftyJSONTests",
                                             dependencies: ["Alamofire"],
                                             path: "Tests")],
                       swiftLanguageVersions: [.v4])
